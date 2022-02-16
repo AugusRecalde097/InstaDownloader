@@ -5,7 +5,7 @@
     "manifest_version": 2,
     "author": "CsmFl",
     "icons": {
-        "16": "src/icon16.png",
+        "32": "src/icon32.png",
         "48": "src/icon48.png",
         "128": "src/icon128.png"
     },
