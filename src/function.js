@@ -19,7 +19,7 @@ function goMessage(msg, sender, sendResponse) {
                 }
 
                 
-                nameHistoria.replace(".","");
+                nameHistoria = nameHistoria.replace(".","");
                 console.log(nameHistoria.split("/")[0] +"_"+ Date.now())
 
                 downloadImage(urlHistoria, nameHistoria);
