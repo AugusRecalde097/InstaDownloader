@@ -1,0 +1,44 @@
+{
+    "name": "InstaDownLoad",
+    "version": "1.0",
+    "description": "Herramienta sencillita para ver historias",
+    "manifest_version": 2,
+    "author": "CsmFl",
+    "icons": {
+        "32": "src/icon32.png",
+        "48": "src/icon48.png",
+        "128": "src/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.instagram.com/*"
+            ],
+            "js": [
+                "src/function.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_title": "InstaDownLoad",
+        "default_icon": "src/icon48.png"
+    },
+    "background": {
+        "page": "background.html"
+    },
+    "permissions": [
+        "notifications",
+        "storage",
+        "tabs",
+        "activeTab",
+        "http://*/*",
+        "http://*/*",
+        "cookies"
+    ],
+    "web_accessible_resources": [
+        "src/icon48.png"
+    ],
+    
+    "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
+
+}
